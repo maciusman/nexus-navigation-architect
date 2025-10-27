@@ -75,14 +75,20 @@ python --version
 
 Jeśli nie masz Pythona, pobierz z https://www.python.org/downloads/
 
-### 2. Zainstaluj zależności
+### 2. Sklonuj repozytorium
 
 ```bash
-cd "x:\Aplikacje\SEO - 3.0 - Budowa kategorii ecommerce"
+git clone https://github.com/maciusman/nexus-navigation-architect.git
+cd nexus-navigation-architect
+```
+
+### 3. Zainstaluj zależności
+
+```bash
 pip install -r requirements.txt
 ```
 
-### 3. Uruchom aplikację
+### 4. Uruchom aplikację
 
 ```bash
 python app.py
@@ -419,8 +425,7 @@ Aplikacja jest **darmowa**, ale używa płatnych API:
   - ✅ o1-mini (najlepszy dla JSON)
   - ✅ QwQ-32b (tani reasoning)
   - ✅ DeepSeek (dobry i tani)
-
-**Unikaj:** Gemini Pro dla kroku 5 (problemy z JSON)
+  - ✅ Gemini 2.5 Pro (doskonały reasoning)
 
 ### 3. Co zrobić gdy krok 5 zwraca błędy JSON?
 
@@ -504,21 +509,13 @@ Jeśli masz problemy:
 1. **Sprawdź logi** - aplikacja pokazuje szczegółowe błędy
 2. **Sprawdź klucze API** - czy są aktywne i mają środki
 3. **Sprawdź pliki** - czy `products.txt`, `content_website.json` etc. istnieją
-4. **Sprawdź model** - spróbuj innego modelu (np. o1-mini zamiast Gemini Pro)
+4. **Sprawdź model** - spróbuj innego modelu (np. reasoning models dla kroku 5)
 
 ---
 
 ## 📄 Licencja
 
 MIT License - projekt edukacyjny
-
----
-
-## 🎉 Podziękowania
-
-- **OpenRouter** - za dostęp do wszystkich modeli AI
-- **Jina AI** - za Reader API
-- **Anthropic, OpenAI, Google** - za modele AI
 
 ---
 
