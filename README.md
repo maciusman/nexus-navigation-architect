@@ -112,7 +112,7 @@ python app.py
    - Kliknij **"Nowy projekt"** i podaj nazwę
 
 3. **Tab: Workflow**
-   - **Krok 1**: Wpisz URL sitemap, ustaw filtr (np. `.html`)
+   - **Krok 1**: Wpisz URL sitemap i filtr (np. `.html`) LUB wybierz plik TXT z listą URL-i
    - **Krok 2**: Ustaw liczbę wątków dla Jina (domyślnie 10)
    - **Kroki 3-5**: Wybierz modele AI (auto-sugestie)
    - Zaznacz wszystkie kroki (1-5)
@@ -139,19 +139,31 @@ python app.py
 
 ## 🔄 Workflow (5 Kroków)
 
-### Krok 1: Pobranie listy produktów z sitemap
+### Krok 1: Pobranie listy produktów
 
-**Wejście:** URL sitemap
+**Wejście:** URL sitemap LUB plik TXT z listą URL-i
 **Wyjście:** `products.txt` (lista URL-i produktów)
 
-**Ustawienia:**
+**Metoda A: Parsowanie sitemap XML**
 - `URL Sitemap` - adres sitemap index lub pojedynczego sitemap
 - `Filtr URL` - pattern filtrowania (np. `.html`, `/product/`, `/p/`)
 
-**Przykład:**
+**Metoda B: Upload pliku TXT**
+- Kliknij przycisk **"Wybierz plik"**
+- Wybierz plik TXT z listą URL-i (jeden URL na linię)
+- Plik zostanie skopiowany do projektu jako `products.txt`
+
+**Przykład (Metoda A):**
 - URL: `https://example.com/sitemap.xml`
 - Filtr: `.html`
 - Wynik: 500 URL-i produktów
+
+**Przykład (Metoda B):**
+```
+https://example.com/product-1.html
+https://example.com/product-2.html
+https://example.com/product-3.html
+```
 
 ---
 
