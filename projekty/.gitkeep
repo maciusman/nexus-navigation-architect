@@ -1,0 +1,2 @@
+# This file ensures the projekty/ folder is tracked by git
+# Actual project folders will be ignored (see .gitignore)
